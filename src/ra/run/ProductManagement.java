@@ -82,10 +82,9 @@ public class ProductManagement {
         System.out.println("Nhập số lượng danh mục cần thêm");
         int count = Integer.parseInt(Config.scanner().nextLine());
         for (int i = 0; i < count; i++) {
-            System.out.println("Thêm mới danh mục " + (i+1));
-            Catalog catalog = new Catalog();
-            catalog.inputData();
-            catalogs.add(catalog);
+            Catalog cata = new Catalog();
+            cata.inputData();
+            catalogs.add(cata);
         }
     }
 }

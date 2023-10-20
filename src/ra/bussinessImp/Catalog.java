@@ -53,6 +53,7 @@ public class Catalog implements IShop {
 
     @Override
     public void inputData() {
+        System.out.println("Thêm mới danh mục:");
         System.out.println("Nhập tên danh mục");
         this.catalogName = Config.scanner().nextLine();
         System.out.println("Nhập đô ưu tiên");
